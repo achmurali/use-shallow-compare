@@ -41,5 +41,8 @@
   },
   "dependencies": {
     "react": "^17.0.2"
-  }
+  },
+  "files": [
+    "lib"
+  ]
 }
