@@ -13,7 +13,7 @@ function shallowCompare(a: any, b: any): boolean {
     return true;
 
   //to check for undefined
-  if (typeof source !== 'object' || source === null || typeof target !== 'object' || target === null)
+  if (typeof source !== 'object' || !source || typeof target !== 'object' || !target)
     return false;
 
   if (typeOf(source) !== typeOf(target))
@@ -29,10 +29,16 @@ function shallowCompare(a: any, b: any): boolean {
     target = [...target];
   }
 
-  if (source.constructor.name === 'date')
+  if (typeOf(source) === 'date') 
     return source.getTime() === target.getTime();
+  
+  const sourceKeys = Object.keys(source);
+  const targetKeys = Object.keys(target);
+  
+  if(sourceKeys.length !== targetKeys.length)
+    return false;
 
-  return [...Object.keys(source), ...Object.keys(target)].every(k => source[k] === target[k]
+  return [...sourceKeys, ...targetKeys].every(k => source[k] === target[k]
         && hasOwnProperty.call(source, k)
         && hasOwnProperty.call(target, k));
 }
