@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "lint": "eslint . --ext .ts"
+    "jest": "jest",
+    "lint": "eslint . --ext .ts",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run typecheck && npm run lint && npm run jest"
   },
   "repository": {
     "type": "git",
@@ -24,14 +27,19 @@
   },
   "homepage": "https://github.com/achmurali/use-shallow-effect#readme",
   "devDependencies": {
+    "@testing-library/react-hooks": "^7.0.1",
+    "@types/jest": "^27.0.1",
+    "@types/react": "^17.0.19",
     "@typescript-eslint/eslint-plugin": "^4.29.2",
     "@typescript-eslint/parser": "^4.29.2",
     "eslint": "^7.32.0",
     "jest": "^27.0.6",
+    "react-dom": "^17.0.2",
+    "react-test-renderer": "^17.0.2",
+    "ts-jest": "^27.0.5",
     "typescript": "^4.3.5"
   },
   "dependencies": {
-    "@types/react": "^17.0.19",
     "react": "^17.0.2"
   }
 }
