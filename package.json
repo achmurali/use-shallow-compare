@@ -20,7 +20,7 @@
     "compare",
     "performance"
   ],
-  "author": "achmurali",
+  "author": "achmurali <achvmurali@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/achmurali/use-shallow-effect/issues"
