@@ -1,5 +1,5 @@
 {
-  "name": "use-shallow-compare",
+  "name": "use-shallow-effect",
   "version": "1.0.0",
   "description": "useEffect with shallow comparison for better performance.",
   "main": "lib/index.js",

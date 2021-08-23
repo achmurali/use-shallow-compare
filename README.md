@@ -1,4 +1,4 @@
-# use-shallow-compare
+# use-shallow-effect
 
 useEffect with shallow comparison. Additionaly, a shallow comparison function.
 
@@ -16,7 +16,7 @@ better performance than deep-comparison or stock useEffect.
 
 ## Installation
 
-```npm install use-shallow-compare```
+```npm install use-shallow-effect```
 
 ## Usage
 
