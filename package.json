@@ -1,8 +1,8 @@
 {
-  "name": "use-shallow-effect",
+  "name": "use-shallow-compare",
   "version": "1.0.0",
   "description": "useEffect with shallow comparison for better performance.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
     "jest": "jest",
@@ -16,6 +16,7 @@
   },
   "keywords": [
     "shallow-compare",
+    "shallow-equal",
     "useEffect",
     "compare",
     "performance"
