@@ -12,6 +12,7 @@ better performance than deep-comparison or stock useEffect.
 - useShallowEffect.
 - shallow comparison function.
 - Super Light and Fast.
+- Thoroughly tested.
 
 ## Installation
 
